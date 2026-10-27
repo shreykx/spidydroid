@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("blueprint.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding-top: 10px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-links button:active {
+  background-color: blue;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links button {
+    width: 100%;
+  }
+}
+
+img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+img:hover {
+  transform: scale(1.1);
+  position: relative;
+  z-index: 10;
+}

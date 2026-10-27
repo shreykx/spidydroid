@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spidydroid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-header">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <button onclick="window.location.href = '/'">home</button>
+        <button onclick="window.location.href = './faqs'">faqs</button>
+        <button onclick="window.location.href = './journal'">journal</button>
+        <button onclick="window.location.href = './contact'">contact</button>
+      </div>
+    </nav>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+    </script>
+    <div style="padding: 10px 20px">
+      <h1 style="color: white">spidydroid</h1>
+      <p style="color: white">
+        spidydroid is a super cool small droid project i'm starting to work on
+        for fallen. the current decided thing is that i'll be building a small
+        android that sits on your table and has its own computer, alongside
+        limbs and visual sensories. it does not only act on your command after
+        thinking a while, but also instinctively as a reaction to sudden
+        stimulus from its environment. the idea is to create a moving computer
+        powered by an agent that sits in it controlling (creepy but useful)
+      </p>
+    </div>
+    <div style="padding: 10px 20px">
+      <div
+        class=""
+        style="
+          background-color: rgba(255, 255, 255, 0.5);
+          box-shadow: 10px 20px;
+          border: 1px solid #ccc;
+        "
+      >
+        <h2 style="color: black">some super early images ^^</h2>
+        <img src="./sketch.jpeg" alt="" style="height: 300px" />
+        <img src="./spidysketch.jpeg" alt="" style="height: 300px" />
+        <img src="./brainbodysync.jpeg" alt="" style="height: 300px" />
+
+      </div>
+    </div>
+    <div style="padding: 10px 20px">
+      <div style="background-color: white; padding: 10px 20px">
+        <ul>
+          <li>
+            <a href="https://github.com/shreykx/spidydroid" style="color: blue"
+              >project repository</a
+            > plz star!!
+          </li>
+          <li>
+            <a href="https://github.com/shreykx/spidydroid" style="color: blue"
+              >@shreykx (my) github profile</a
+            >
+          </li>
+        </ul>
+
+        <img src="hc-flag.png" alt="hackclub-flag" style="height: 70px" />
+
+        <p>
+          Hack Club is the world's largest nonprofit where teens come together
+          to build cool stuff. Spidydroid is a project for #Fallen, one of its
+          programs. The final stage of the program will take place when
+          participants from different parts of the globe come together in
+          Shenzhen, China, at the Maker Faire.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
