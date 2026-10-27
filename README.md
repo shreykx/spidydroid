@@ -2,5 +2,5 @@
 
 spidydroid is a super cool small droid project i'm starting to work on for [#fallen](https://fallen.hackclub.com/). the current decided thing is that i'll be building a small android that sits on your table and has its own computer, alongside limbs and visual sensories. it does not only act on your command after thinking a while, but also instinctively as a reaction to sudden stimulus from its environment. the idea is to create a moving computer powered by an agent that sits in it controlling (creepy but useful)
 
-* [link to the project site](example.com)
+* [link to the project site](https://spidydroid-web.vercel.app/)
 * [follow my github profile](github.com/shreykx)
